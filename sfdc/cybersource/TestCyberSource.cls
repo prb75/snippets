@@ -17,7 +17,11 @@ public with sharing class TestCyberSource {
                                                    'bill_to_address_country,bill_to_address_postal_code';
     
     public static final String UNSIGNED_FIELD_NAMES = 'card_type,card_number,card_expiry_date';
+    
+    // custom class that generates random bits
     public static final String TRANS_UUID = GuidGenerator.generateGUID();
+    
+    // UTC Now
     public static final String SIGNED_DT = System.Now().format('yyyy-MM-dd\'T\'HH:mm:ss\'Z\'','GMT');
 
     public static final String LOCALE = 'en';
